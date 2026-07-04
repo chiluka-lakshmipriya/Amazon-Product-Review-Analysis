@@ -4,7 +4,8 @@ import joblib
 model = joblib.load("model.pkl")
 tfidf = joblib.load("tfidf.pkl")
 
-st.title("Amazon Review Sentiment Analysis")
+st.title("Amazon Product Review Sentiment Analyzer")
+st.write("Enter an Amazon product review below. The model will predict whether the review expresses a Positive, Neutral, or Negative sentiment.")
 
 review = st.text_area("Enter your review")
 
